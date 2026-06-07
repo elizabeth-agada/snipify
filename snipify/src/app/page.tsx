@@ -149,8 +149,10 @@ export default function HomePage() {
       <footer className="border-t border-white/10 py-8">
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Scissors size={16} className="text-blue-400" />
-            <span className="text-sm font-bold">snipify</span>
+            <Link href="/" className="flex items-center gap-2">
+              <Scissors size={22} className="text-blue-400" />
+              <span className="text-xl font-black tracking-tight">snipify</span>
+            </Link>
           </div>
           
         </div>
