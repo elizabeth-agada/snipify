@@ -6,22 +6,21 @@ export default function HomePage() {
     <div className="min-h-screen bg-[#0f172a] text-white">
 
       {/* Navbar */}
-      <nav className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between border-b border-white/10">
-        <div className="flex items-center gap-2">
+      <nav className="max-w-6xl mx-auto px-4 md:px-6 py-4 flex items-center justify-between border-b border-white/10">
+        <Link href="/" className="flex items-center gap-2">
           <Scissors size={22} className="text-blue-400" />
           <span className="text-xl font-black tracking-tight">snipify</span>
-        </div>
-        <div className="flex items-center gap-6">
-          <Link href="/sign-in" className="text-sm text-gray-400 hover:text-white transition">
+        </Link>
+        <div className="flex items-center gap-3">
+          <Link href="/sign-in" className="hidden sm:block text-sm text-gray-400 hover:text-white transition">
             Log in
           </Link>
           <Link href="/sign-up"
-            className="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition">
+            className="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold px-4 py-2 rounded-lg transition">
             Get started <ArrowRight size={14} />
           </Link>
         </div>
       </nav>
-
       {/* Hero */}
       <section className="max-w-6xl mx-auto px-6 pt-24 pb-20">
         <div className="max-w-3xl">
@@ -30,14 +29,14 @@ export default function HomePage() {
             Free to use. No credit card required.
           </div>
 
-          <h1 className="text-5xl md:text-6xl font-black leading-tight mb-6 tracking-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6 tracking-tight">
             Short links that<br />
             <span className="text-blue-400">actually work.</span>
           </h1>
 
           <p className="text-gray-400 text-lg leading-relaxed mb-10 max-w-xl">
             Paste any URL and get a short link in seconds. Track who clicks it,
-            where they are, and what device they use — all in one dashboard.
+            where they are, and what device they use, all in one dashboard.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3">

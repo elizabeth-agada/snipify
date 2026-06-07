@@ -35,8 +35,10 @@ export default function DashboardPage() {
       <nav className="border-b border-white/10 px-4 py-4">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Scissors size={20} className="text-blue-400" />
-            <span className="font-black text-lg">snipify</span>
+            <Link href="/" className="flex items-center gap-2">
+          <Scissors size={22} className="text-blue-400" />
+          <span className="text-xl font-black tracking-tight">snipify</span>
+        </Link>
           </div>
           <div className="flex items-center gap-3">
             <span className="text-sm text-gray-400 hidden sm:block">{user?.firstName}</span>

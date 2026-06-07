@@ -2,7 +2,7 @@ import { SignUp } from '@clerk/nextjs'
 
 export default function SignUpPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center">
+    <main className="min-h-screen bg-[#0f172a] flex items-center justify-center">
       <SignUp />
     </main>
   )
